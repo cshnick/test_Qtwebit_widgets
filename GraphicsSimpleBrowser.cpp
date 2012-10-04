@@ -4,8 +4,6 @@
 #include <QWebSettings>
 #include "WebWindow.h"
 
-const QString GraphicsSimpleBrowser::mDefaultUrl = WebWindow::commonDefaultUrl;
-
 GraphicsSimpleBrowser::GraphicsSimpleBrowser(QGraphicsItem *parent) :
     QGraphicsWidget(parent)
   , mGraphicsWebView(0)
@@ -112,7 +110,7 @@ GraphicsSimpleBrowser::GraphicsSimpleBrowser(QGraphicsItem *parent) :
     connect(mGraphicsWebView, SIGNAL(urlChanged(QUrl)), this, SLOT(on_webView_urlChanged(QUrl)));
     connect(mCloseButton, SIGNAL(clicked()), this, SLOT(on_mCloseButton_clicked()));
 
-    mAdressBar->setText(mDefaultUrl);
+    mAdressBar->setText("vimeo.com");
     load();
 
     setFlags(ItemIsMovable | ItemIsSelectable | ItemIsFocusable);

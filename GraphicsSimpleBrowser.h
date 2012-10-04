@@ -14,8 +14,6 @@ class GraphicsSimpleBrowser : public QGraphicsWidget
 {
     Q_OBJECT
 public:
-    static const QString mDefaultUrl;
-
     explicit GraphicsSimpleBrowser(QGraphicsItem *parent = 0);
 
 private slots:

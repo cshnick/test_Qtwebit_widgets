@@ -13,8 +13,6 @@ class SimpleBrowser : public QWidget
     Q_OBJECT
     
 public:
-    static const QString mDefaultUrl;
-
     explicit SimpleBrowser(QWidget *parent = 0);
     ~SimpleBrowser();
 

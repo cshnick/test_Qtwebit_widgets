@@ -6,8 +6,6 @@
 #include "GraphicsProxySimpleBrowser.h"
 #include <QtGui>
 
-const QString WebWindow::commonDefaultUrl = "mail.ru";
-
 WebWindow::WebWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::WebWindow)

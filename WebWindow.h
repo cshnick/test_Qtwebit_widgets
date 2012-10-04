@@ -8,8 +8,11 @@
 class SimpleBrowser;
 class QGraphicsScene;
 
+
+
 namespace Ui {
 class WebWindow;
+//const char* commonDefaultUrl = "vimeo.com";
 }
 
 class WebWindow : public QMainWindow
@@ -17,8 +20,6 @@ class WebWindow : public QMainWindow
     Q_OBJECT
     
 public:
-    static const QString commonDefaultUrl;
-
     explicit WebWindow(QWidget *parent = 0);
     ~WebWindow();
     

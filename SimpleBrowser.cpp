@@ -4,8 +4,6 @@
 #include "WebWindow.h"
 #include <QtGui>
 
-const QString SimpleBrowser::mDefaultUrl = WebWindow::commonDefaultUrl;
-
 SimpleBrowser::SimpleBrowser(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::SimpleBrowser)
@@ -31,7 +29,7 @@ SimpleBrowser::SimpleBrowser(QWidget *parent) :
     connect(ui->toolButton_2, SIGNAL(clicked()), ui->webView, SLOT(back()));
     connect(ui->toolButton, SIGNAL(clicked()), ui->webView, SLOT(forward()));
 
-    ui->lineEdit->setText(mDefaultUrl);
+    ui->lineEdit->setText("vimeo.com");
     load();
 }
 
